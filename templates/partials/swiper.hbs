@@ -1,0 +1,25 @@
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        {{#each slider}}
+        {{!-- <div class="swiper-slide"style="transform: translate3d(100px, 100px, 100px)">  to change any style of swiper --}}
+            <div class="swiper-slide">
+                <a href="./games/{{this.game_name}}">
+                    <img src="{{this.logo_img}}" alt="{this.game_name}">
+                    <div class="game-info">
+                        <h6>BASE GAME</h6>
+                        <h4>{{this.game_name}}</h4>
+                        <div class="prise-discont">
+                            <p id="percent-discount">20%</p>
+                            <s id="coted-price">180$</s>
+                            <p id="price">{{this.game_discount}}</p> 
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {{/each}}
+    </div>
+</div>
+
+<!-- swiper.js -->
+<script src="../swiper-card/js/swiper-bundle.min.js"></script>
+<script src="../js/swiper.js"></script>

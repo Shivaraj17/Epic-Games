@@ -1,0 +1,66 @@
+{{>head_games}}
+<body>
+    {{>nav_index_games}}
+    <div class="game_heading">
+        {{#each slider}}
+        <p id="game_heading">{{this.game_name}}</p>
+        {{/each}}
+    </div>
+    <!-- images -->
+<section>
+    {{>game_carousel}}
+</section>
+<aside>
+    <div class="game-content">
+        <div class="flex_hover_content">
+            <div class="game_hover_logo">
+                <div class="game-logo">
+                    {{#each slider}}
+                    <img id="game_size" src="{{this.img_logo}}" alt="{{this.game_name}}">
+                    {{/each}}
+                </div>
+            </div>
+            <p id="Base_game">Base Game</p>
+            <div class="game_discont">
+                <p id="discont">20%</p>
+                {{#each slider}}
+                <s id="cot-price">{{this.game_discount}}</s>             <!-- we can use <s> or we can use css text decoration:line-through  -->
+                <p id="game-price">{{this.game_price}}</p>
+                {{/each}}
+            </div>
+            
+            <p id="sales-ends">Sales ends tomorrow</p>
+            <div class="game-info-btn">
+                <button class="btn" id="pre-purchases">Pre Purchases</button>
+                <button id="add_to_cart">Add to Cart</button>
+                <button id="add_to_wishlist">Add to Wishlist</button>
+            </div>
+            
+            <div class="game_main_details">
+                <div class="refund">
+                    <p id="text_color_change">Refunded Type</p>
+                    <p>Self-refund</p>
+                </div>
+               <div class="game_developer">
+                <p id="text_color_change">Developer</p>
+                <p>Shivaraj.B</p>
+               </div>
+               <div class="game_publisher">
+                <p id="text_color_change">Publisher</p>
+                <p>Shivaraj.B</p>
+               </div>
+               <div class="game_avalibal">
+                <p id="text_color_change">Available on</p>
+                <p>next week</p>
+               </div>
+               <div class="game_platform">
+                <p id="text_color_change">Platforms</p>
+               </div>
+            </div>
+            <div class="btn_share_report">
+                <button id="btn_share">Share</button>
+                <button id="btn_report">Report</button>
+            </div>
+        </div>
+    </div>
+</aside>

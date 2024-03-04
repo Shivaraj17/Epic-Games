@@ -1,0 +1,35 @@
+@media (max-width : 1140px) {
+
+    .logo nav ul.active {
+        margin-top: 0%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo nav ul{
+        margin-top: -100%;
+    }
+    .nav2-functions-left,.nav2-functions-right{
+        display: none;
+    }
+    
+    .flex_link{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #input-text{
+        width: 92%;
+    }
+    .icon{
+        position: absolute;
+        top: 45.8%;
+        bottom: 40%;
+    }
+
+    #burger{
+        display: block;
+    }
+}

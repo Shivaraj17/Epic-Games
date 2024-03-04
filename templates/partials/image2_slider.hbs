@@ -1,0 +1,13 @@
+        <div class="images-slider">
+            {{#each slider}}
+            <div class="hover">
+                <div class="hover-effect-img">
+                    <img id="img-1" src="{{this.logo_img}}" id="hover-effect" alt="{{this.game_name}}">
+                </div>
+                    <div class="hover-effect-info">
+                        <p>{{this.game_name}}</p>
+                    </div>
+            </div>
+            {{/each}}
+        </div>
+        <script src="../js/slider-hover.js"></script>
